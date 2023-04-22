@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <title>MON POKE - LIVRAISON</title>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li id="nom_logo">Mon Poké</li>
+        <li><a href="index.html" style="float:right;">Accueil</a></li>
+        <li><a href="index.html#a_propos" style="float:right;">À propos</a></li>
+      </ul>
+  </div>
+
+  <form id="infoPerso" name="infoPerso" method="get" action="confirmation.html">
+    <div class="content_top">
+      <div class="left">
+      </div>
+      <div class="ingredients">
+        <h3 class="titreh3">Mes informations</h3>
+          <div class="formulairelivraison">
+            <input required="required" type="text" id="nom" name="nom" placeholder="Nom"><br>
+            <input required="required" type="text" id="prenom" name="prenom" placeholder="Prénom"><br>
+            <input required="required" type="tel" id="tel" name="tel" required pattern="0[1-9][0-9]{8}" title="Un numéro de téléphone français valide à 10 chiffres (par exemple : 0123456789)"placeholder="Tel"><br>
+            <input required="required" type="text" id="adresse" name="adresse" placeholder="Adresse"><br>
+            <input required="required" type="number" id="codepostal" name="codepostal" max="98890" title="Un code postal valide à 5 chiffres (par exemple : 64 000)" placeholder="Code Postal"><br>
+            <input required="required" type="text" id="ville" name="ville" placeholder="Ville"><br>
+            <br>
+          </div>
+
+          <div class="input" id="input">
+            <script>
+              //----------------------- récup infos----------------------
+              nom = new Array();
+              valeur = new Array();
+
+              //On enlève le ? dans l'url
+              url = window.location.search.slice(1,window.location.search.length);
+
+              //récupérer les différents paramètres séparés par un &
+              listParam = url.split("&");
+              for(i=0;i<listParam.length;i++){
+                  laListe = listParam[i].split("=");
+                  nom[i] = laListe[0];
+                  valeur[i] = laListe[1];
+                  valeur[i]=valeur[i].replaceAll("+", " ");
+                  valeur[i]=valeur[i].replaceAll("%C3%A9", "é");
+                  valeur[i]=valeur[i].replaceAll("%C3%A8", "è");
+              }
+
+              //mettre en input hidden les infos du panier pour les recup dans l'url sur la dernière page 
+              for(j=0;j<listParam.length-1;j++){
+                let node=document.createElement("input");
+                node.setAttribute("type","hidden");
+
+                node.setAttribute("value",valeur[j]);
+                node.setAttribute("name",nom[j]);
+
+                document.getElementById("input").appendChild(node);
+              }
+            </script>
+            <input type="hidden" id="numero_cache" name="numero_cache">
+          </div>
+          <input type="submit" id="bouton_valider_livraison" name="submit" value="Valider">
+      </div>
+
+      <div class="container_panier2">
+        <div id="panier">
+          <h3>Poke n°<span id="commande"></span></h3>
+          <p>Prix : <span id="prix"></span></p>
+          <hr><br>
+          <p id="taille"></p>
+          <p id="base"></p>
+          <p id="proteines"></p>
+          <p id="sauce"></p>
+          <p id="accomp1"></p>
+          <p id="accomp2"></p>
+          <p id="accomp3"></p>
+          <p id="topping"></p>
+        </div>
+      </div>
+      </form>
+    <script type="text/javascript" src="assets/compo_&_livraison.js"></script>
+</body>
+</html>

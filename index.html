@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <title>MON POKE - ACCUEIL</title>
+</head>
+<body>
+
+  <div class="scroll">
+
+    <div class="menu">
+      <ul>
+        <li id="nom_logo">Mon Poké</li>
+        <li><a href="index.html" style="float:right;">Accueil</a></li>
+        <li><a href="index.html#a_propos" style="float:right;">À propos</a></li>
+      </ul>
+    </div>
+
+    <div class="content_top" id="content_top">
+      <div class="accueil">
+        <input type="button" id="bouton_accueil" onclick="window.location.href = 'composition.html'" value="Composer votre pokebowl" />
+        <a href="#a_propos"><img src="assets/img/fleche_bas.png" id="fleche" alt="fleche"></a>
+      </div>
+    </div>
+
+    <div id="a_propos">
+      <p id="texte_a_propos">
+        Mon Poke c'est quoi ?<br><br>
+        Un site qui vous permet de composer votre pokebowl.
+        Ce dernier est l'un des plats principaux de la cuisine traditionnelle hawaienne.
+        Il est composé de riz, de poisson cru, et divers autres ingrédients.
+        Il existe de nombreuses variantes de ce plat. <br><br>
+        Ici vous pouvez choisir votre base, protéine, sauce, vos garnitures et toppings.
+        Mais aussi la taille de votre pokebowl, qui ne change pas le nombre d'ingrédients (7) mais la quantité de ceux choisis.
+      </p>
+      <a href="#content_top"><img src="assets/img/fleche_haut.png" id="fleche" alt="fleche" ></a>
+    </div>
+
+  </div>
+
+  <script>
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <title>MON POKE - COMPOSITION</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li id="nom_logo">Mon Poké</li>
+            <li><a href="index.html" style="float:right;">Accueil</a></li>
+            <li><a href="index.html#a_propos" style="float:right;">À propos</a></li>
+          </ul>
+    </div>
+
+    <form id="poke_composition" name="poke_composition" method="get" action="livraison.html">
+      <div class="content_top">
+        <div class="left">
+        </div>
+        <div class="ingredients">
+          <h3 class="titreh3">Composition</h3>
+          <div class="compo">
+            <div class="colonne" id="colonne1">
+                <div class="row">
+                    <select required="required" name="taille" id="select">
+                        <option selected hidden value="choix">Taille</option>
+                        <option alt="0" id="Petit" value="Petit">Petit</option>
+                        <option alt="0" id="Moyen" value="Moyen">Moyen</option>
+                        <option alt="0" id="Grand" value="Grand">Grand</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select required="required" name="base" id="base">
+                        <option selected hidden value="choix">Base</option>
+                        <option alt="0" id="Riz blanc" value="Riz blanc">Riz blanc</option>
+                        <option alt="0" id="Riz brun" value="Riz brun">Riz brun</option>
+                        <option alt="0" id="Riz vinaigré" value="Riz vinaigré">Riz vinaigré</option>
+                        <option alt="0" id="Salade" value="Salade">Salade</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select required="required" name="proteines" id="proteines">
+                        <option selected hidden value="choix">Protéines</option>
+                        <option alt="0" id="Saumon" value="Saumon">Saumon</option>
+                        <option alt="0" id="Thon" value="Thon mariné">Thon</option>
+                        <option alt="0" id="Poulet" value="Poulet">Poulet</option>
+                        <option alt="0" id="Tofu" value="Tofu">Tofu</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select required="required" name="sauce" id="sauce">
+                        <option selected hidden value="choix">Sauce</option>
+                        <option alt="0" id="Spicy" value="Spicy">Spicy</option>
+                        <option alt="0" id="Soja sucré" value="Soja sucré">Soja sucré</option>
+                        <option alt="0" id="Soja salé" value="Soja salé">Soja salé</option>
+                        <option alt="0" id="Aigre douce" value="Aigre douce">Aigre douce</option>
+                        <option alt="0" id="Curry" value="Curry">Curry</option>
+                        <option alt="0" id="Sans Sauce" value="Sans Sauce">Sans Sauce</option>
+                    </select>
+                </div>
+            </div>
+            <div class="colonne" id="colonne2">
+                <div class="row">
+                    <select required="required" id="accomp1" name="accomp1">
+                    <option selected hidden value="choix">Garniture</option>
+                    <option alt="0" value="Coleslaw" id="Coleslaw">Coleslaw</option>
+                    <option alt="0" value="Choux rouge" id="Choux rouge">Choux rouge</option>
+                    <option alt="0" value="Carottes" id="Carottes">Carottes</option>
+                    <option alt="0" value="Radis blanc" id="Radis blanc">Radis blanc</option>
+                    <option alt="0" value="Concombre" id="Concombre">Concombre</option>
+                    <option alt="0" value="Avocat" id="Avocat">Avocat</option>
+                    <option alt="0" value="Mangue" id="Mangue">Mangue</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select required="required" name="accomp2" id="accomp2">
+                        <option selected hidden value="choix">Garniture</option>
+                        <option alt="0" value="Coleslaw" id="Coleslaw">Coleslaw</option>
+                        <option alt="0" value="Choux rouge" id="Choux rouge">Choux rouge</option>
+                        <option alt="0" value="Carottes" id="Carottes">Carottes</option>
+                        <option alt="0" value="Radis blanc" id="Radis blanc">Radis blanc</option>
+                        <option alt="0" value="Concombre" id="Concombre">Concombre</option>
+                        <option alt="0" value="Avocat" id="Avocat">Avocat</option>
+                        <option alt="0" value="Mangue" id="Mangue">Mangue</option>
+                    </select>
+                </div>
+                <div class="row">
+                        <select required="required" name="accomp3" id="accomp3">
+                            <option selected hidden value="choix">Garniture</option>
+                            <option alt="0" value="Coleslaw" id="Coleslaw">Coleslaw</option>
+                            <option alt="0" value="Choux rouge" id="Choux rouge">Choux rouge</option>
+                            <option alt="0" value="Carottes" id="Carottes">Carottes</option>
+                            <option alt="0" value="Radis blanc" id="Radis blanc">Radis blanc</option>
+                            <option alt="0" value="Concombre" id="Concombre">Concombre</option>
+                            <option alt="0" value="Avocat" id="Avocat">Avocat</option>
+                            <option alt="0" value="Mangue" id="Mangue">Mangue</option>
+                        </select>
+                </div>
+                <div class="row">
+                        <select required="required" required="required" name="topping" id="topping">
+                            <option selected hidden value="choix">Topping</option>
+                            <option alt="0" id="Sésame" value="Sésame">Sésame</option>
+                            <option alt="0" id="Cacahuètes" value="Cacahuètes">Cacahuètes</option>
+                            <option alt="0" id="Oignons frits" value="Oignons frits">Oignons frits</option>
+                            <option alt="0" id="Coriandre" value="Coriandre">Coriandre</option>
+                            <option alt="0" id="Ciboulette" value="Ciboulette">Ciboulette</option>
+                            <option alt="0" id="Gingembre" value="Gingembre">Gingembre</option>
+                            <option alt="0" id="Sans Topping" value="Sans Topping">Sans Topping</option>
+                        </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container_panier">
+              <div id="panier">
+                  <h3>Mon Poke : </h3>
+                  <p>Prix : <span id="prix"></span></p>
+                  <hr><br>
+              </div>
+          </div>
+        </div>
+
+        <div class="boutons">
+            <input type="submit" name="submit" alt="0" value="Envoyer la commande">
+            <input type="button" name="reset" value="reset" onclick="window.location.reload()">
+        </div>
+        </form>
+
+        <script>
+            const form = document.getElementById('poke_composition');
+            form.addEventListener('submit', function(event) {
+                //verif que l'user a bien sélectionné des éléments dans chacun des selects
+                const panier = document.getElementById("panier");
+                const pTags = panier.getElementsByTagName("p");
+                const count = pTags.length;
+                if (count < 8) {
+                    event.preventDefault();
+                    alert("Veuillez remplir tous les champs");
+                }
+            });
+        </script>
+    <script type="text/javascript" src="assets/panier.js"></script>
+</body>
+</html>
