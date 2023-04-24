@@ -25,6 +25,8 @@ function deplacer(e) {
         element = element.options[element.selectedIndex];
     }
 
+    console.log(element); 
+    
     let nom_element = element.value;
 
 
