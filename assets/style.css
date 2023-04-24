@@ -309,6 +309,7 @@ input::placeholder{
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 1em;
+    margin-bottom: 1vh;
 }
 #infoPerso input:hover{
     background: rgba(255, 255, 255, 0.8);
