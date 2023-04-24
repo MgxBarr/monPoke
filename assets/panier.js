@@ -21,7 +21,7 @@ function ajouterOnClick() {
 function deplacer(e) {
     var element = e.target;
 
-    if(navigator.userAgent.indexOf("Chrome") != -1 ){
+    if(navigator.userAgent.indexOf("Chrome") != -1 || navigator.userAgent.indexOf("Safari") != -1){
         element = element.options[element.selectedIndex];
     }
 
