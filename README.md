@@ -18,7 +18,7 @@ Mon Poke is a website made as part of a computer science course. It allows you t
 * Clone this repository to your desktop 
 * Open index.html in your browser (chrome recommended)
 
-##Try it 
+## Try it 
 
 * You can see the website without cloning the repository at this [adress](https://mgxbarr.github.io/monPoke/). 
 
